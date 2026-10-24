@@ -3,7 +3,7 @@ services:
     name: didnt-read
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python -m uvicorn app:app --host 0.0.0.0 --port $PORT
+    startCommand: python start.py
     plan: free
     region: oregon
     envVars:
