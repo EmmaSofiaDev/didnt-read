@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero-section">
+  <div class="hero-tag">The Sloth's Legal Contract Scanner</div>
+  <h1 class="hero-title">Paste a Terms of Service link.<br>I'll show you the clauses that matter.</h1>
+  <p class="hero-subtitle">
+    "I agree to the Terms." Everyone clicks it. No one reads them. 
+    <strong>Didn't Read</strong> scans 9,000 words in 30 seconds using an open-weight Qwen 4B model fine-tuned on the LexGLUE UNFAIR-ToS benchmark.
+  </p>
+
+  <div class="input-card">
+    <form id="analyze-form" action="/analyze" method="POST">
+      <div class="form-group">
+        <label for="url-input" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem;">
+          Terms of Service Document URL
+        </label>
+        <div class="url-input-row">
+          <input 
+            type="url" 
+            id="url-input" 
+            name="url" 
+            class="url-input" 
+            placeholder="https://example.com/terms" 
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="submit-btn" class="btn-primary">
+            <span>Analyze Clauses</span> →
+          </button>
+        </div>
+      </div>
+
+      <div class="toggle-paste-row">
+        <button type="button" id="toggle-paste-btn" class="text-toggle-btn">
+          Or paste document text manually
+        </button>
+        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-3);">
+          8 Unfair Categories Checked
+        </span>
+      </div>
+
+      <div id="paste-container" style="display: none; margin-top: 1rem;">
+        <label for="raw-text" style="display: block; font-size: 0.8125rem; font-weight: 500; margin-bottom: 0.25rem;">
+          Paste raw contract text:
+        </label>
+        <textarea 
+          id="raw-text" 
+          name="text" 
+          class="textarea-input" 
+          placeholder="Paste full terms or specific sections here..."
+        ></textarea>
+      </div>
+
+      <div id="progress-indicator" class="progress-container">
+        <div class="spinner"></div>
+        <div id="progress-status" class="progress-text">Fetching contract and parsing legal sentences...</div>
+      </div>
+    </form>
+  </div>
+
+  <div class="examples-bar">
+    <span class="examples-label">Try real Terms:</span>
+    <button type="button" class="example-chip" data-url="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">
+      GitHub Terms
+    </button>
+    <button type="button" class="example-chip" data-url="https://www.spotify.com/us/legal/end-user-agreement/">
+      Spotify Terms
+    </button>
+    <button type="button" class="example-chip" data-url="https://discord.com/terms">
+      Discord Terms
+    </button>
+    <button type="button" class="example-chip" data-url="https://www.notion.com/terms">
+      Notion Terms
+    </button>
+    <button type="button" class="example-chip" data-url="https://www.tiktok.com/legal/page/row/terms-of-service/en">
+      TikTok Terms
+    </button>
+  </div>
+</section>
+
+<section style="max-width: 860px; margin: 0 auto; border-top: 1px solid var(--rule); padding-top: 3rem;">
+  <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 1rem;">Why Open Innovation & Fine-Tuning Matter Here</h2>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; font-size: 0.9375rem; color: var(--ink-2); line-height: 1.6;">
+    <div>
+      <h3 style="font-family: var(--font-sans); font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">
+        1. General Models Guess; Specialization Knows
+      </h3>
+      <p>
+        Zero-shot proprietary models tend to hallucinate or flag innocuous phrases as "unfair" while missing binding arbitration waivers buried in warranty sections. By fine-tuning Qwen 4B on the expert-annotated LexGLUE UNFAIR-ToS benchmark, the weights encode exact legal precedent (CLAUDETTE project standards).
+      </p>
+    </div>
+    <div>
+      <h3 style="font-family: var(--font-sans); font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">
+        2. Provable, Measured Improvement
+      </h3>
+      <p>
+        Instead of claiming "AI magic", we published a frozen evaluation comparing the zero-shot base model against our Tinker LoRA checkpoint. Every metric, precision score, and training loss curve is auditable on our <a href="/eval" style="color: var(--accent); text-decoration: underline;">Evaluation Dashboard</a>.
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const toggleBtn = document.getElementById('toggle-paste-btn');
+  const pasteContainer = document.getElementById('paste-container');
+  const urlInput = document.getElementById('url-input');
+  const form = document.getElementById('analyze-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const progress = document.getElementById('progress-indicator');
+  const progressStatus = document.getElementById('progress-status');
+
+  toggleBtn.addEventListener('click', () => {
+    if (pasteContainer.style.display === 'none') {
+      pasteContainer.style.display = 'block';
+      urlInput.removeAttribute('required');
+      toggleBtn.textContent = 'Switch back to URL mode';
+    } else {
+      pasteContainer.style.display = 'none';
+      urlInput.setAttribute('required', 'required');
+      toggleBtn.textContent = 'Or paste document text manually';
+    }
+  });
+
+  document.querySelectorAll('.example-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      urlInput.value = chip.dataset.url;
+      if (pasteContainer.style.display !== 'none') {
+        pasteContainer.style.display = 'none';
+        urlInput.setAttribute('required', 'required');
+        toggleBtn.textContent = 'Or paste document text manually';
+      }
+      form.requestSubmit();
+    });
+  });
+
+  form.addEventListener('submit', () => {
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.6';
+    progress.style.display = 'block';
+
+    const stages = [
+      "Fetching Terms of Service body text...",
+      "Extracting legal clauses and stripping navigation...",
+      "Segmenting sentences using NLP pipeline...",
+      "Sampling predictions from Tinker LoRA model...",
+      "Highlighting unfair clauses in document..."
+    ];
+    let i = 0;
+    setInterval(() => {
+      i = (i + 1) % stages.length;
+      progressStatus.textContent = stages[i];
+    }, 2500);
+  });
+</script>
+{% endblock %}

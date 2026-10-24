@@ -1,0 +1,58 @@
+{
+  "macro_f1": 0.7068,
+  "micro_f1": 0.6953,
+  "per_label": {
+    "Limitation of liability": {
+      "precision": 0.5068,
+      "recall": 0.9737,
+      "f1": 0.6667,
+      "support": 38
+    },
+    "Unilateral termination": {
+      "precision": 0.6863,
+      "recall": 0.9211,
+      "f1": 0.7865,
+      "support": 38
+    },
+    "Unilateral change": {
+      "precision": 0.5231,
+      "recall": 0.8947,
+      "f1": 0.6602,
+      "support": 38
+    },
+    "Content removal": {
+      "precision": 0.619,
+      "recall": 1.0,
+      "f1": 0.7647,
+      "support": 13
+    },
+    "Contract by using": {
+      "precision": 0.8333,
+      "recall": 0.6522,
+      "f1": 0.7317,
+      "support": 23
+    },
+    "Choice of law": {
+      "precision": 0.6842,
+      "recall": 1.0,
+      "f1": 0.8125,
+      "support": 13
+    },
+    "Jurisdiction": {
+      "precision": 0.8421,
+      "recall": 1.0,
+      "f1": 0.9143,
+      "support": 16
+    },
+    "Arbitration": {
+      "precision": 0.1892,
+      "recall": 1.0,
+      "f1": 0.3182,
+      "support": 7
+    }
+  },
+  "sample_count": 422,
+  "avg_latency_ms": 2597.9,
+  "total_tokens_generated": 1563,
+  "model_name": "Qwen/Qwen3.5-4B (Zero-Shot Baseline)"
+}

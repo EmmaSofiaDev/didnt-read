@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: didnt-read
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    plan: free
+    region: oregon
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: TINKER_API_KEY
+        sync: false

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Didn't Read — Terms of Service Analyzer{% endblock %}</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="brand">
+      <span class="brand-stamp">DIDN'T READ</span>
+      <span class="brand-title">Terms of Service Analyzer</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/" class="nav-link {% if request.url.path == '/' %}active{% endif %}">Analyze</a>
+      <a href="/eval" class="nav-link {% if request.url.path == '/eval' %}active{% endif %}">Model Evaluation</a>
+      <span class="nav-badge">Fine-Tuned Qwen 4B · Tinker</span>
+      <a href="https://github.com/EmmaSofiaDev/didnt-read" target="_blank" class="nav-link">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main class="main-wrapper">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Built for the <strong>Hacktoberfest Open-Source AI Challenge: Slow and Steady (Week 3)</strong>.</p>
+      <p>Target Category: <strong>Best Use of Tinker</strong>. Powered by a fine-tuned LoRA model on coastalcph/lex_glue (UNFAIR-ToS).</p>
+      <p style="margin-top: 0.5rem; color: var(--ink-3);">Deployed on Render Web Service. No telemetry, no fake data, no simulated responses.</p>
+    </div>
+  </footer>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

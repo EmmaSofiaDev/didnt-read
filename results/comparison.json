@@ -1,0 +1,133 @@
+{
+  "baseline": {
+    "macro_f1": 0.7068,
+    "micro_f1": 0.6953,
+    "per_label": {
+      "Limitation of liability": {
+        "precision": 0.5068,
+        "recall": 0.9737,
+        "f1": 0.6667,
+        "support": 38
+      },
+      "Unilateral termination": {
+        "precision": 0.6863,
+        "recall": 0.9211,
+        "f1": 0.7865,
+        "support": 38
+      },
+      "Unilateral change": {
+        "precision": 0.5231,
+        "recall": 0.8947,
+        "f1": 0.6602,
+        "support": 38
+      },
+      "Content removal": {
+        "precision": 0.619,
+        "recall": 1.0,
+        "f1": 0.7647,
+        "support": 13
+      },
+      "Contract by using": {
+        "precision": 0.8333,
+        "recall": 0.6522,
+        "f1": 0.7317,
+        "support": 23
+      },
+      "Choice of law": {
+        "precision": 0.6842,
+        "recall": 1.0,
+        "f1": 0.8125,
+        "support": 13
+      },
+      "Jurisdiction": {
+        "precision": 0.8421,
+        "recall": 1.0,
+        "f1": 0.9143,
+        "support": 16
+      },
+      "Arbitration": {
+        "precision": 0.1892,
+        "recall": 1.0,
+        "f1": 0.3182,
+        "support": 7
+      }
+    },
+    "sample_count": 422,
+    "avg_latency_ms": 2597.9,
+    "total_tokens_generated": 1563,
+    "model_name": "Qwen/Qwen3.5-4B (Zero-Shot Baseline)"
+  },
+  "finetune": {
+    "macro_f1": 0.8741,
+    "micro_f1": 0.8481,
+    "per_label": {
+      "Limitation of liability": {
+        "precision": 0.9394,
+        "recall": 0.8158,
+        "f1": 0.8732,
+        "support": 38
+      },
+      "Unilateral termination": {
+        "precision": 0.9,
+        "recall": 0.7105,
+        "f1": 0.7941,
+        "support": 38
+      },
+      "Unilateral change": {
+        "precision": 0.7632,
+        "recall": 0.7632,
+        "f1": 0.7632,
+        "support": 38
+      },
+      "Content removal": {
+        "precision": 0.9091,
+        "recall": 0.7692,
+        "f1": 0.8333,
+        "support": 13
+      },
+      "Contract by using": {
+        "precision": 1.0,
+        "recall": 0.7826,
+        "f1": 0.878,
+        "support": 23
+      },
+      "Choice of law": {
+        "precision": 1.0,
+        "recall": 0.9231,
+        "f1": 0.96,
+        "support": 13
+      },
+      "Jurisdiction": {
+        "precision": 1.0,
+        "recall": 0.9375,
+        "f1": 0.9677,
+        "support": 16
+      },
+      "Arbitration": {
+        "precision": 1.0,
+        "recall": 0.8571,
+        "f1": 0.9231,
+        "support": 7
+      }
+    },
+    "sample_count": 422,
+    "avg_latency_ms": 2756.2,
+    "total_tokens_generated": 1191,
+    "model_name": "Didn't Read Fine-Tuned LoRA (tinker://d4884b70-cb6f-51d0-b797-77f851c1b8cc:train:0/sampler_weights/didnt-read-unfair-tos-lora)"
+  },
+  "improvement": {
+    "macro_f1_delta": 0.1673,
+    "micro_f1_delta": 0.1528,
+    "percentage_gain": 23.7
+  },
+  "published_lexglue_benchmark": {
+    "roberta_base": {
+      "macro_f1": 0.79,
+      "micro_f1": 0.82
+    },
+    "legal_bert": {
+      "macro_f1": 0.81,
+      "micro_f1": 0.84
+    }
+  }
+}

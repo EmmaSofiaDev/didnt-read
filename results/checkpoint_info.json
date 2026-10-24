@@ -1,0 +1,1190 @@
+{
+  "checkpoint_name": "didnt-read-unfair-tos-lora",
+  "checkpoint_path": "tinker://d4884b70-cb6f-51d0-b797-77f851c1b8cc:train:0/sampler_weights/didnt-read-unfair-tos-lora",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "rank": 16,
+  "total_steps": 196,
+  "epochs": 2,
+  "batch_size": 16,
+  "learning_rate": 0.0002,
+  "final_loss": 0.1287,
+  "training_time_seconds": 752.71,
+  "history": [
+    {
+      "step": 1,
+      "epoch": 1,
+      "loss": 0.408,
+      "timestamp": 16.9
+    },
+    {
+      "step": 2,
+      "epoch": 1,
+      "loss": 0.3559,
+      "timestamp": 21.52
+    },
+    {
+      "step": 3,
+      "epoch": 1,
+      "loss": 0.2055,
+      "timestamp": 25.62
+    },
+    {
+      "step": 4,
+      "epoch": 1,
+      "loss": 0.2424,
+      "timestamp": 30.24
+    },
+    {
+      "step": 5,
+      "epoch": 1,
+      "loss": 0.2173,
+      "timestamp": 35.53
+    },
+    {
+      "step": 6,
+      "epoch": 1,
+      "loss": 0.1708,
+      "timestamp": 40.03
+    },
+    {
+      "step": 7,
+      "epoch": 1,
+      "loss": 0.1482,
+      "timestamp": 44.63
+    },
+    {
+      "step": 8,
+      "epoch": 1,
+      "loss": 0.2763,
+      "timestamp": 49.06
+    },
+    {
+      "step": 9,
+      "epoch": 1,
+      "loss": 0.3676,
+      "timestamp": 52.34
+    },
+    {
+      "step": 10,
+      "epoch": 1,
+      "loss": 0.1476,
+      "timestamp": 55.45
+    },
+    {
+      "step": 11,
+      "epoch": 1,
+      "loss": 0.1083,
+      "timestamp": 58.48
+    },
+    {
+      "step": 12,
+      "epoch": 1,
+      "loss": 0.3631,
+      "timestamp": 61.53
+    },
+    {
+      "step": 13,
+      "epoch": 1,
+      "loss": 0.1598,
+      "timestamp": 64.57
+    },
+    {
+      "step": 14,
+      "epoch": 1,
+      "loss": 0.1689,
+      "timestamp": 67.67
+    },
+    {
+      "step": 15,
+      "epoch": 1,
+      "loss": 0.2142,
+      "timestamp": 72.33
+    },
+    {
+      "step": 16,
+      "epoch": 1,
+      "loss": 0.2121,
+      "timestamp": 78.71
+    },
+    {
+      "step": 17,
+      "epoch": 1,
+      "loss": 0.1914,
+      "timestamp": 81.87
+    },
+    {
+      "step": 18,
+      "epoch": 1,
+      "loss": 0.2098,
+      "timestamp": 85.02
+    },
+    {
+      "step": 19,
+      "epoch": 1,
+      "loss": 0.1879,
+      "timestamp": 89.5
+    },
+    {
+      "step": 20,
+      "epoch": 1,
+      "loss": 0.1448,
+      "timestamp": 92.98
+    },
+    {
+      "step": 21,
+      "epoch": 1,
+      "loss": 0.1766,
+      "timestamp": 96.25
+    },
+    {
+      "step": 22,
+      "epoch": 1,
+      "loss": 0.1504,
+      "timestamp": 99.32
+    },
+    {
+      "step": 23,
+      "epoch": 1,
+      "loss": 0.0585,
+      "timestamp": 102.61
+    },
+    {
+      "step": 24,
+      "epoch": 1,
+      "loss": 0.1771,
+      "timestamp": 105.77
+    },
+    {
+      "step": 25,
+      "epoch": 1,
+      "loss": 0.0941,
+      "timestamp": 108.84
+    },
+    {
+      "step": 26,
+      "epoch": 1,
+      "loss": 0.2244,
+      "timestamp": 111.93
+    },
+    {
+      "step": 27,
+      "epoch": 1,
+      "loss": 0.1348,
+      "timestamp": 115.01
+    },
+    {
+      "step": 28,
+      "epoch": 1,
+      "loss": 0.0956,
+      "timestamp": 118.05
+    },
+    {
+      "step": 29,
+      "epoch": 1,
+      "loss": 0.0393,
+      "timestamp": 121.5
+    },
+    {
+      "step": 30,
+      "epoch": 1,
+      "loss": 0.1261,
+      "timestamp": 124.78
+    },
+    {
+      "step": 31,
+      "epoch": 1,
+      "loss": 0.3755,
+      "timestamp": 127.94
+    },
+    {
+      "step": 32,
+      "epoch": 1,
+      "loss": 0.3199,
+      "timestamp": 131.19
+    },
+    {
+      "step": 33,
+      "epoch": 1,
+      "loss": 0.0966,
+      "timestamp": 134.25
+    },
+    {
+      "step": 34,
+      "epoch": 1,
+      "loss": 0.0776,
+      "timestamp": 137.51
+    },
+    {
+      "step": 35,
+      "epoch": 1,
+      "loss": 0.246,
+      "timestamp": 140.45
+    },
+    {
+      "step": 36,
+      "epoch": 1,
+      "loss": 0.177,
+      "timestamp": 143.35
+    },
+    {
+      "step": 37,
+      "epoch": 1,
+      "loss": 0.1719,
+      "timestamp": 147.75
+    },
+    {
+      "step": 38,
+      "epoch": 1,
+      "loss": 0.0899,
+      "timestamp": 151.96
+    },
+    {
+      "step": 39,
+      "epoch": 1,
+      "loss": 0.1503,
+      "timestamp": 157.44
+    },
+    {
+      "step": 40,
+      "epoch": 1,
+      "loss": 0.0339,
+      "timestamp": 161.22
+    },
+    {
+      "step": 41,
+      "epoch": 1,
+      "loss": 0.1383,
+      "timestamp": 164.71
+    },
+    {
+      "step": 42,
+      "epoch": 1,
+      "loss": 0.0094,
+      "timestamp": 168.45
+    },
+    {
+      "step": 43,
+      "epoch": 1,
+      "loss": 0.2034,
+      "timestamp": 171.95
+    },
+    {
+      "step": 44,
+      "epoch": 1,
+      "loss": 0.0978,
+      "timestamp": 175.77
+    },
+    {
+      "step": 45,
+      "epoch": 1,
+      "loss": 0.0787,
+      "timestamp": 179.29
+    },
+    {
+      "step": 46,
+      "epoch": 1,
+      "loss": 0.1012,
+      "timestamp": 183.31
+    },
+    {
+      "step": 47,
+      "epoch": 1,
+      "loss": 0.2493,
+      "timestamp": 186.74
+    },
+    {
+      "step": 48,
+      "epoch": 1,
+      "loss": 0.0771,
+      "timestamp": 190.83
+    },
+    {
+      "step": 49,
+      "epoch": 1,
+      "loss": 0.1246,
+      "timestamp": 194.75
+    },
+    {
+      "step": 50,
+      "epoch": 1,
+      "loss": 0.2876,
+      "timestamp": 197.81
+    },
+    {
+      "step": 51,
+      "epoch": 1,
+      "loss": 0.0983,
+      "timestamp": 202.29
+    },
+    {
+      "step": 52,
+      "epoch": 1,
+      "loss": 0.0451,
+      "timestamp": 206.79
+    },
+    {
+      "step": 53,
+      "epoch": 1,
+      "loss": 0.0373,
+      "timestamp": 212.0
+    },
+    {
+      "step": 54,
+      "epoch": 1,
+      "loss": 0.0415,
+      "timestamp": 216.16
+    },
+    {
+      "step": 55,
+      "epoch": 1,
+      "loss": 0.1679,
+      "timestamp": 220.09
+    },
+    {
+      "step": 56,
+      "epoch": 1,
+      "loss": 0.1588,
+      "timestamp": 225.32
+    },
+    {
+      "step": 57,
+      "epoch": 1,
+      "loss": 0.028,
+      "timestamp": 229.15
+    },
+    {
+      "step": 58,
+      "epoch": 1,
+      "loss": 0.0631,
+      "timestamp": 232.75
+    },
+    {
+      "step": 59,
+      "epoch": 1,
+      "loss": 0.1144,
+      "timestamp": 236.46
+    },
+    {
+      "step": 60,
+      "epoch": 1,
+      "loss": 0.0371,
+      "timestamp": 240.2
+    },
+    {
+      "step": 61,
+      "epoch": 1,
+      "loss": 0.3091,
+      "timestamp": 243.78
+    },
+    {
+      "step": 62,
+      "epoch": 1,
+      "loss": 0.1208,
+      "timestamp": 248.19
+    },
+    {
+      "step": 63,
+      "epoch": 1,
+      "loss": 0.0798,
+      "timestamp": 253.12
+    },
+    {
+      "step": 64,
+      "epoch": 1,
+      "loss": 0.1953,
+      "timestamp": 258.79
+    },
+    {
+      "step": 65,
+      "epoch": 1,
+      "loss": 0.1382,
+      "timestamp": 261.86
+    },
+    {
+      "step": 66,
+      "epoch": 1,
+      "loss": 0.0575,
+      "timestamp": 265.0
+    },
+    {
+      "step": 67,
+      "epoch": 1,
+      "loss": 0.0827,
+      "timestamp": 268.05
+    },
+    {
+      "step": 68,
+      "epoch": 1,
+      "loss": 0.2189,
+      "timestamp": 272.51
+    },
+    {
+      "step": 69,
+      "epoch": 1,
+      "loss": 0.0996,
+      "timestamp": 277.77
+    },
+    {
+      "step": 70,
+      "epoch": 1,
+      "loss": 0.0385,
+      "timestamp": 281.93
+    },
+    {
+      "step": 71,
+      "epoch": 1,
+      "loss": 0.029,
+      "timestamp": 285.54
+    },
+    {
+      "step": 72,
+      "epoch": 1,
+      "loss": 0.0824,
+      "timestamp": 289.34
+    },
+    {
+      "step": 73,
+      "epoch": 1,
+      "loss": 0.0421,
+      "timestamp": 293.14
+    },
+    {
+      "step": 74,
+      "epoch": 1,
+      "loss": 0.2442,
+      "timestamp": 296.93
+    },
+    {
+      "step": 75,
+      "epoch": 1,
+      "loss": 0.1414,
+      "timestamp": 301.95
+    },
+    {
+      "step": 76,
+      "epoch": 1,
+      "loss": 0.1801,
+      "timestamp": 306.76
+    },
+    {
+      "step": 77,
+      "epoch": 1,
+      "loss": 0.2373,
+      "timestamp": 310.9
+    },
+    {
+      "step": 78,
+      "epoch": 1,
+      "loss": 0.1512,
+      "timestamp": 314.43
+    },
+    {
+      "step": 79,
+      "epoch": 1,
+      "loss": 0.0969,
+      "timestamp": 318.19
+    },
+    {
+      "step": 80,
+      "epoch": 1,
+      "loss": 0.1336,
+      "timestamp": 322.01
+    },
+    {
+      "step": 81,
+      "epoch": 1,
+      "loss": 0.2015,
+      "timestamp": 325.84
+    },
+    {
+      "step": 82,
+      "epoch": 1,
+      "loss": 0.0619,
+      "timestamp": 329.09
+    },
+    {
+      "step": 83,
+      "epoch": 1,
+      "loss": 0.2432,
+      "timestamp": 332.35
+    },
+    {
+      "step": 84,
+      "epoch": 1,
+      "loss": 0.166,
+      "timestamp": 337.15
+    },
+    {
+      "step": 85,
+      "epoch": 1,
+      "loss": 0.1345,
+      "timestamp": 341.24
+    },
+    {
+      "step": 86,
+      "epoch": 1,
+      "loss": 0.3164,
+      "timestamp": 344.58
+    },
+    {
+      "step": 87,
+      "epoch": 1,
+      "loss": 0.1518,
+      "timestamp": 349.48
+    },
+    {
+      "step": 88,
+      "epoch": 1,
+      "loss": 0.0547,
+      "timestamp": 353.03
+    },
+    {
+      "step": 89,
+      "epoch": 1,
+      "loss": 0.1245,
+      "timestamp": 358.35
+    },
+    {
+      "step": 90,
+      "epoch": 1,
+      "loss": 0.1685,
+      "timestamp": 362.13
+    },
+    {
+      "step": 91,
+      "epoch": 1,
+      "loss": 0.1316,
+      "timestamp": 365.86
+    },
+    {
+      "step": 92,
+      "epoch": 1,
+      "loss": 0.1299,
+      "timestamp": 369.53
+    },
+    {
+      "step": 93,
+      "epoch": 1,
+      "loss": 0.1954,
+      "timestamp": 373.6
+    },
+    {
+      "step": 94,
+      "epoch": 1,
+      "loss": 0.2809,
+      "timestamp": 377.34
+    },
+    {
+      "step": 95,
+      "epoch": 1,
+      "loss": 0.0866,
+      "timestamp": 380.98
+    },
+    {
+      "step": 96,
+      "epoch": 1,
+      "loss": 0.0801,
+      "timestamp": 384.84
+    },
+    {
+      "step": 97,
+      "epoch": 1,
+      "loss": 0.0357,
+      "timestamp": 390.55
+    },
+    {
+      "step": 98,
+      "epoch": 1,
+      "loss": 0.0599,
+      "timestamp": 395.3
+    },
+    {
+      "step": 99,
+      "epoch": 2,
+      "loss": 0.1444,
+      "timestamp": 399.84
+    },
+    {
+      "step": 100,
+      "epoch": 2,
+      "loss": 0.0528,
+      "timestamp": 403.7
+    },
+    {
+      "step": 101,
+      "epoch": 2,
+      "loss": 0.0365,
+      "timestamp": 407.48
+    },
+    {
+      "step": 102,
+      "epoch": 2,
+      "loss": 0.0667,
+      "timestamp": 412.71
+    },
+    {
+      "step": 103,
+      "epoch": 2,
+      "loss": 0.0891,
+      "timestamp": 416.55
+    },
+    {
+      "step": 104,
+      "epoch": 2,
+      "loss": 0.1062,
+      "timestamp": 420.42
+    },
+    {
+      "step": 105,
+      "epoch": 2,
+      "loss": 0.0446,
+      "timestamp": 426.87
+    },
+    {
+      "step": 106,
+      "epoch": 2,
+      "loss": 0.0184,
+      "timestamp": 433.45
+    },
+    {
+      "step": 107,
+      "epoch": 2,
+      "loss": 0.1381,
+      "timestamp": 438.36
+    },
+    {
+      "step": 108,
+      "epoch": 2,
+      "loss": 0.0576,
+      "timestamp": 442.64
+    },
+    {
+      "step": 109,
+      "epoch": 2,
+      "loss": 0.1923,
+      "timestamp": 448.28
+    },
+    {
+      "step": 110,
+      "epoch": 2,
+      "loss": 0.0919,
+      "timestamp": 452.62
+    },
+    {
+      "step": 111,
+      "epoch": 2,
+      "loss": 0.1528,
+      "timestamp": 456.37
+    },
+    {
+      "step": 112,
+      "epoch": 2,
+      "loss": 0.014,
+      "timestamp": 460.44
+    },
+    {
+      "step": 113,
+      "epoch": 2,
+      "loss": 0.1158,
+      "timestamp": 464.0
+    },
+    {
+      "step": 114,
+      "epoch": 2,
+      "loss": 0.1014,
+      "timestamp": 467.59
+    },
+    {
+      "step": 115,
+      "epoch": 2,
+      "loss": 0.1291,
+      "timestamp": 471.69
+    },
+    {
+      "step": 116,
+      "epoch": 2,
+      "loss": 0.0377,
+      "timestamp": 475.67
+    },
+    {
+      "step": 117,
+      "epoch": 2,
+      "loss": 0.1589,
+      "timestamp": 478.73
+    },
+    {
+      "step": 118,
+      "epoch": 2,
+      "loss": 0.1315,
+      "timestamp": 483.48
+    },
+    {
+      "step": 119,
+      "epoch": 2,
+      "loss": 0.1314,
+      "timestamp": 486.85
+    },
+    {
+      "step": 120,
+      "epoch": 2,
+      "loss": 0.062,
+      "timestamp": 490.1
+    },
+    {
+      "step": 121,
+      "epoch": 2,
+      "loss": 0.0631,
+      "timestamp": 493.2
+    },
+    {
+      "step": 122,
+      "epoch": 2,
+      "loss": 0.1353,
+      "timestamp": 496.36
+    },
+    {
+      "step": 123,
+      "epoch": 2,
+      "loss": 0.05,
+      "timestamp": 499.42
+    },
+    {
+      "step": 124,
+      "epoch": 2,
+      "loss": 0.102,
+      "timestamp": 502.59
+    },
+    {
+      "step": 125,
+      "epoch": 2,
+      "loss": 0.1053,
+      "timestamp": 505.95
+    },
+    {
+      "step": 126,
+      "epoch": 2,
+      "loss": 0.0731,
+      "timestamp": 509.09
+    },
+    {
+      "step": 127,
+      "epoch": 2,
+      "loss": 0.0947,
+      "timestamp": 512.25
+    },
+    {
+      "step": 128,
+      "epoch": 2,
+      "loss": 0.0658,
+      "timestamp": 515.34
+    },
+    {
+      "step": 129,
+      "epoch": 2,
+      "loss": 0.0437,
+      "timestamp": 518.41
+    },
+    {
+      "step": 130,
+      "epoch": 2,
+      "loss": 0.0406,
+      "timestamp": 521.8
+    },
+    {
+      "step": 131,
+      "epoch": 2,
+      "loss": 0.0055,
+      "timestamp": 524.95
+    },
+    {
+      "step": 132,
+      "epoch": 2,
+      "loss": 0.0203,
+      "timestamp": 528.05
+    },
+    {
+      "step": 133,
+      "epoch": 2,
+      "loss": 0.023,
+      "timestamp": 531.26
+    },
+    {
+      "step": 134,
+      "epoch": 2,
+      "loss": 0.0115,
+      "timestamp": 534.34
+    },
+    {
+      "step": 135,
+      "epoch": 2,
+      "loss": 0.1137,
+      "timestamp": 537.75
+    },
+    {
+      "step": 136,
+      "epoch": 2,
+      "loss": 0.0884,
+      "timestamp": 541.01
+    },
+    {
+      "step": 137,
+      "epoch": 2,
+      "loss": 0.0518,
+      "timestamp": 544.16
+    },
+    {
+      "step": 138,
+      "epoch": 2,
+      "loss": 0.0594,
+      "timestamp": 547.19
+    },
+    {
+      "step": 139,
+      "epoch": 2,
+      "loss": 0.0263,
+      "timestamp": 550.29
+    },
+    {
+      "step": 140,
+      "epoch": 2,
+      "loss": 0.1284,
+      "timestamp": 553.31
+    },
+    {
+      "step": 141,
+      "epoch": 2,
+      "loss": 0.0069,
+      "timestamp": 557.17
+    },
+    {
+      "step": 142,
+      "epoch": 2,
+      "loss": 0.0233,
+      "timestamp": 561.24
+    },
+    {
+      "step": 143,
+      "epoch": 2,
+      "loss": 0.0514,
+      "timestamp": 565.04
+    },
+    {
+      "step": 144,
+      "epoch": 2,
+      "loss": 0.0437,
+      "timestamp": 568.18
+    },
+    {
+      "step": 145,
+      "epoch": 2,
+      "loss": 0.0679,
+      "timestamp": 571.39
+    },
+    {
+      "step": 146,
+      "epoch": 2,
+      "loss": 0.0326,
+      "timestamp": 574.45
+    },
+    {
+      "step": 147,
+      "epoch": 2,
+      "loss": 0.2361,
+      "timestamp": 578.16
+    },
+    {
+      "step": 148,
+      "epoch": 2,
+      "loss": 0.0462,
+      "timestamp": 581.96
+    },
+    {
+      "step": 149,
+      "epoch": 2,
+      "loss": 0.0738,
+      "timestamp": 585.71
+    },
+    {
+      "step": 150,
+      "epoch": 2,
+      "loss": 0.0589,
+      "timestamp": 589.23
+    },
+    {
+      "step": 151,
+      "epoch": 2,
+      "loss": 0.1542,
+      "timestamp": 592.87
+    },
+    {
+      "step": 152,
+      "epoch": 2,
+      "loss": 0.024,
+      "timestamp": 596.03
+    },
+    {
+      "step": 153,
+      "epoch": 2,
+      "loss": 0.0906,
+      "timestamp": 599.1
+    },
+    {
+      "step": 154,
+      "epoch": 2,
+      "loss": 0.0286,
+      "timestamp": 602.23
+    },
+    {
+      "step": 155,
+      "epoch": 2,
+      "loss": 0.0956,
+      "timestamp": 605.35
+    },
+    {
+      "step": 156,
+      "epoch": 2,
+      "loss": 0.1151,
+      "timestamp": 608.61
+    },
+    {
+      "step": 157,
+      "epoch": 2,
+      "loss": 0.1008,
+      "timestamp": 611.78
+    },
+    {
+      "step": 158,
+      "epoch": 2,
+      "loss": 0.0401,
+      "timestamp": 615.1
+    },
+    {
+      "step": 159,
+      "epoch": 2,
+      "loss": 0.0411,
+      "timestamp": 619.57
+    },
+    {
+      "step": 160,
+      "epoch": 2,
+      "loss": 0.0199,
+      "timestamp": 624.2
+    },
+    {
+      "step": 161,
+      "epoch": 2,
+      "loss": 0.1118,
+      "timestamp": 628.04
+    },
+    {
+      "step": 162,
+      "epoch": 2,
+      "loss": 0.0014,
+      "timestamp": 632.14
+    },
+    {
+      "step": 163,
+      "epoch": 2,
+      "loss": 0.1401,
+      "timestamp": 637.53
+    },
+    {
+      "step": 164,
+      "epoch": 2,
+      "loss": 0.0767,
+      "timestamp": 642.24
+    },
+    {
+      "step": 165,
+      "epoch": 2,
+      "loss": 0.208,
+      "timestamp": 646.11
+    },
+    {
+      "step": 166,
+      "epoch": 2,
+      "loss": 0.0117,
+      "timestamp": 650.07
+    },
+    {
+      "step": 167,
+      "epoch": 2,
+      "loss": 0.0163,
+      "timestamp": 653.82
+    },
+    {
+      "step": 168,
+      "epoch": 2,
+      "loss": 0.0277,
+      "timestamp": 657.44
+    },
+    {
+      "step": 169,
+      "epoch": 2,
+      "loss": 0.0806,
+      "timestamp": 661.12
+    },
+    {
+      "step": 170,
+      "epoch": 2,
+      "loss": 0.0108,
+      "timestamp": 664.05
+    },
+    {
+      "step": 171,
+      "epoch": 2,
+      "loss": 0.0638,
+      "timestamp": 667.33
+    },
+    {
+      "step": 172,
+      "epoch": 2,
+      "loss": 0.0693,
+      "timestamp": 670.54
+    },
+    {
+      "step": 173,
+      "epoch": 2,
+      "loss": 0.1885,
+      "timestamp": 673.56
+    },
+    {
+      "step": 174,
+      "epoch": 2,
+      "loss": 0.1261,
+      "timestamp": 676.97
+    },
+    {
+      "step": 175,
+      "epoch": 2,
+      "loss": 0.0426,
+      "timestamp": 680.24
+    },
+    {
+      "step": 176,
+      "epoch": 2,
+      "loss": 0.0208,
+      "timestamp": 683.54
+    },
+    {
+      "step": 177,
+      "epoch": 2,
+      "loss": 0.2104,
+      "timestamp": 686.62
+    },
+    {
+      "step": 178,
+      "epoch": 2,
+      "loss": 0.0199,
+      "timestamp": 690.11
+    },
+    {
+      "step": 179,
+      "epoch": 2,
+      "loss": 0.0671,
+      "timestamp": 693.07
+    },
+    {
+      "step": 180,
+      "epoch": 2,
+      "loss": 0.0393,
+      "timestamp": 697.68
+    },
+    {
+      "step": 181,
+      "epoch": 2,
+      "loss": 0.21,
+      "timestamp": 701.17
+    },
+    {
+      "step": 182,
+      "epoch": 2,
+      "loss": 0.1574,
+      "timestamp": 704.24
+    },
+    {
+      "step": 183,
+      "epoch": 2,
+      "loss": 0.0123,
+      "timestamp": 707.72
+    },
+    {
+      "step": 184,
+      "epoch": 2,
+      "loss": 0.1004,
+      "timestamp": 710.96
+    },
+    {
+      "step": 185,
+      "epoch": 2,
+      "loss": 0.0075,
+      "timestamp": 714.32
+    },
+    {
+      "step": 186,
+      "epoch": 2,
+      "loss": 0.0273,
+      "timestamp": 717.72
+    },
+    {
+      "step": 187,
+      "epoch": 2,
+      "loss": 0.0666,
+      "timestamp": 721.5
+    },
+    {
+      "step": 188,
+      "epoch": 2,
+      "loss": 0.0342,
+      "timestamp": 725.91
+    },
+    {
+      "step": 189,
+      "epoch": 2,
+      "loss": 0.0828,
+      "timestamp": 729.51
+    },
+    {
+      "step": 190,
+      "epoch": 2,
+      "loss": 0.0984,
+      "timestamp": 732.61
+    },
+    {
+      "step": 191,
+      "epoch": 2,
+      "loss": 0.0093,
+      "timestamp": 735.69
+    },
+    {
+      "step": 192,
+      "epoch": 2,
+      "loss": 0.0165,
+      "timestamp": 739.02
+    },
+    {
+      "step": 193,
+      "epoch": 2,
+      "loss": 0.135,
+      "timestamp": 742.06
+    },
+    {
+      "step": 194,
+      "epoch": 2,
+      "loss": 0.241,
+      "timestamp": 746.25
+    },
+    {
+      "step": 195,
+      "epoch": 2,
+      "loss": 0.144,
+      "timestamp": 749.5
+    },
+    {
+      "step": 196,
+      "epoch": 2,
+      "loss": 0.1287,
+      "timestamp": 752.71
+    }
+  ]
+}
